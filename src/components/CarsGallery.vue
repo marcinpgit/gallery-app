@@ -50,3 +50,31 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .cars-title {
+    padding: 20px 0 20px 0;
+    font-weight: 400
+  }
+
+  span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #F7EB9E
+  }
+
+  .cars-quote {
+    font-size: 20px;
+    padding-bottom: 80px
+  }
+
+  .car-img, .cars-col {
+    margin: 0;
+    padding: 0
+  }
+
+  .car-img:hover {
+    filter: blur(2px)
+  }
+  
+</style>
