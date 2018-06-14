@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import IntroPage from '@/components/IntroPage'
+import BioPage from '@/components/BioPage'
 import TravelGallery from '@/components/TravelGallery'
 import PeopleGallery from '@/components/PeopleGallery'
 import CarsGallery from '@/components/CarsGallery'
@@ -13,6 +14,11 @@ export default new Router({
       path: '/',
       name: 'introPage',
       component: IntroPage
+    },
+    {
+      path: '/bio',
+      name: 'bioPage',
+      component: BioPage
     },
     {
       path: '/travel',
