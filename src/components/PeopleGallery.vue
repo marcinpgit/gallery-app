@@ -1,5 +1,5 @@
 <template>
-    <!-- Click Me doesnt work - fix it -->
+    
     <b-container class="people-gallery">
 
         <b-row> 
@@ -119,12 +119,12 @@ export default {
     }
 
     .people-text {
-        background: rgba(44, 62, 80, 0.8);
-        border-radius: 3px;
-        color: white;
+        /* background: rgba(44, 62, 80, 0.8); */
+        /* border-radius: 3px; */
+        color: rgb(54, 45, 45);
         font-size: 19px;
         font-weight: 600;
-        padding: 7px 15px;
+        /* padding: 7px 15px; */
         cursor: pointer;
     }
 </style>

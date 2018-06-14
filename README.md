@@ -1,6 +1,18 @@
-# gallery-app
+# Gallery - App
 
-> image gallerie
+> Project created with Vue.js and Bootstrap-vue
+
+Photo gallery webpage.
+
+---
+
+### Author:
+Marcin Płużyński
+
+#### License:
+Created under free software MIT License.
+
+---
 
 ## Build Setup
 
