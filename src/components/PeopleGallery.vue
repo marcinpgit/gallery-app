@@ -62,3 +62,69 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .people-gallery {
+        padding: 20px
+    }
+
+    .people-title {
+        padding-bottom: 20px;
+        font-weight: 400
+    }
+
+    span {
+        font-size: 50px;
+        font-weight: bold;
+        color: #F7EB9E
+    }
+
+    .people-quote {
+        font-size: 20px;
+        padding-bottom: 80px
+    }
+
+    .people-img {
+        box-shadow: 10px 10px 10px #C9C9C9;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        cursor: pointer;
+    }
+
+    .people-figure {
+        margin-bottom: 50px;
+        position: relative
+    }
+
+    .people-figure:hover .people-img {
+        opacity: 0.5
+    }
+
+    .people-figure:hover .people-box {
+        opacity: 1
+    }
+
+    .people-box {
+        transition: .8s ease;
+        opacity: 0;
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center
+    }
+
+    .people-text {
+        background: rgba(44, 62, 80, 0.8);
+        border-radius: 3px;
+        color: white;
+        font-size: 19px;
+        font-weight: 600;
+        padding: 7px 15px;
+        cursor: pointer;
+    }
+</style>
