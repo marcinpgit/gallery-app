@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header-page></header-page>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+
+import HeaderPage from './components/HeaderPage.vue'
+import IntroPage from './components/IntroPage.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HeaderPage,
+    IntroPage
+  }
 }
 </script>
 
