@@ -64,3 +64,47 @@ export default {
     }
 }
 </script>
+   
+<style scoped>
+    .travel-gallery {
+        padding: 20px
+    }
+
+    .travel-title {
+        padding-bottom: 20px;
+        font-weight: 400
+    }
+
+    span {
+        font-size: 50px;
+        font-weight: bold;
+        color: #F7EB9E
+    }
+
+    .travel-quote {
+        font-size: 20px;
+        padding-bottom: 80px
+    }
+
+    .travel-img {
+        box-shadow: 10px 10px 10px #C9C9C9;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        transition: transform 700ms, filter 1100ms;
+        cursor: pointer
+    }
+
+    .travel-img:hover {
+        filter: grayscale(90%);
+        -webkit-filter: grayscale(90%); 
+        -ms-filter: grayscale(90%);
+        box-shadow: 15px 15px 15px #C9C9C9;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05)
+    }
+
+    .travel-figure {
+        margin-bottom: 50px
+    }
+</style>
