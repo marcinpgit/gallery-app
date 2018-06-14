@@ -32,6 +32,23 @@
             <b-col sm="12" md="6" class="bio-picture">
                 <b-img class="artist-image" fluid :src="authorImage" :alt="altAuthor"/>
                 <b-img class="view-image" fluid :src="viewImage" :alt="altView"/>
+                <div class="social-media-box">
+                    <h5 class="fallow-text">Follow me!</h5>
+                    <p>
+                        Love my Gallery? There are many ways you can connect with me online
+                        to receive the latest photo session insights.
+                    </p>
+                    <b-link href="https://www.facebook.com" target="blank">
+                        <b-img class="social-media-icon" fluid :src="facebookIcon" :alt="altMedia"/>
+                    </b-link>
+                    <b-link href="https://www.instagram.com" target="blank">
+                        <b-img class="social-media-icon" fluid :src="instgramIcon" :alt="altMedia"/>
+                    </b-link>
+                    <b-link href="https://www.twitter.com" target="blank">
+                        <b-img class="social-media-icon" fluid :src="twitterIcon" :alt="altMedia"/>
+                    </b-link>
+                    
+                </div>
             </b-col>
 
         </b-row> 
@@ -49,6 +66,10 @@ export default {
             altView: 'View image',
             authorImage: require('../assets/images/bio/bio-artist.jpg'),
             viewImage: require('../assets/images/bio/bio-picture.jpg'),
+            facebookIcon: require('../assets/images/bio/socialMedia/facebook.png'),
+            instgramIcon: require('../assets/images/bio/socialMedia/instagram.png'),
+            twitterIcon: require('../assets/images/bio/socialMedia/twitter.png'),
+            altMedia: 'Social media icons',
             clients: [
                 { name: 'Bueno Restaurant' },
                 { name: 'Delicious Appetito' },
@@ -72,3 +93,54 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .bio-page {
+        padding: 20px 20px 0 20px
+    }
+
+    h4 {
+        text-decoration: underline #F7EB9E
+    }
+
+    .hello-text {
+        font-weight: 500
+    }
+
+    .bio-client {
+        padding-top: 20px
+    }
+
+    .client-list {
+        list-style: none;
+        padding: 0;
+        margin: 0
+    }
+
+    .bio-books {
+        padding: 20px 0 20px 0;
+    }
+
+    .books-list {
+        list-style: none;
+        padding: 0;
+        margin: 0
+    }
+
+    .fallow-text {
+        font-weight: 600
+    }
+
+    .artist-image {
+        padding-bottom: 10px
+    }
+
+    .social-media-box {
+        margin-top: 20px
+    }
+
+    .social-media-icon {
+        height: 70px;
+        margin: 10px
+    }
+</style>
